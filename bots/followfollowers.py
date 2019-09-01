@@ -25,10 +25,10 @@ def follow_followers(api):
 
 def main():
 	api = create_api()
-	# while True:
-	# 	follow_followers(api)
-	# 	logger.info("Waiting...")
-	# 	time.sleep(60)
+	while True:
+		follow_followers(api)
+		logger.info("Waiting...")
+		time.sleep(60)
 	follow_followers(api)
 
 if __name__ == '__main__':
