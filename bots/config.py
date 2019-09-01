@@ -6,7 +6,7 @@
 #			    2. Creating Twitter API object
 
 
-# tweet-bots/bots/config.py
+# tweepy-bots/bots/config.py
 
 import tweepy
 import logging
