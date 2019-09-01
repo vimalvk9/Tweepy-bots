@@ -10,9 +10,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 def follow_followers(api):
+	
 	logger.info("Retrieving and following followers")
-	#print(tweepy.Cursor(api.followers),tweepy.Cursor(api.followers).items())
-
 	for follower in tweepy.Cursor(api.followers).items():
 		
 		#print(follower._json)
@@ -25,11 +24,14 @@ def follow_followers(api):
 
 def main():
 	api = create_api()
+
 	while True:
 		follow_followers(api)
 		logger.info("Waiting...")
 		time.sleep(60)
-	follow_followers(api)
+	
+	### Uncomment this and comment the upper infinite loop to test the followfollowers() 
+	#follow_followers(api)
 
 if __name__ == '__main__':
 	main()	

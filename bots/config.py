@@ -8,6 +8,33 @@
 
 # tweepy-bots/bots/config.py
 
+# Sample API object structure
+# {
+#   'auth': <tweepy.auth.OAuthHandlerobjectat0x7fe0c9b0acf8>,
+#   'host': 'api.twitter.com',
+#   'search_host': 'search.twitter.com',
+#   'upload_host': 'upload.twitter.com',
+#   'api_root': '/1.1',
+#   'search_root': '',
+#   'upload_root': '/1.1',
+#   'cache': None,
+#   'compression': False,
+#   'retry_count': 0,
+#   'retry_delay': 0,
+#   'retry_errors': None,
+#   'timeout': 60,
+#   'wait_on_rate_limit': True,
+#   'wait_on_rate_limit_notify': True,
+#   'parser': <tweepy.parsers.ModelParserobjectat0x7fe0c6164d30>,
+#   'proxy': {
+    
+#   },
+#   'cached_result': False,
+#   'last_response': <Response[
+#     200
+#   ]
+# }
+
 import tweepy
 import logging
 import os
